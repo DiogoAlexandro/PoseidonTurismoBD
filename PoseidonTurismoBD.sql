@@ -1,5 +1,5 @@
-create database PoseidonTurismoBD;
-use PoseidonTurismoBD;
+CREATE DATABASE PoseidonTurismoBD;
+USE PoseidonTurismoBD;
 
 CREATE TABLE `bkp` (
   `mes_bkp` varchar(2) NOT NULL
