@@ -1,10 +1,12 @@
 CREATE DATABASE PoseidonTurismoBD;
+
 USE PoseidonTurismoBD;
 
 CREATE TABLE `bkp` (
   `mes_bkp` varchar(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
 
 CREATE TABLE `clientes` (
   `telefone` varchar(9) NOT NULL,
@@ -22,6 +24,7 @@ CREATE TABLE `forma_pgto` (
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+
 CREATE TABLE `navios` (
   `id_navios` int(11) NOT NULL AUTO_INCREMENT,
   `nome_navios` varchar(50) DEFAULT NULL,
@@ -30,12 +33,13 @@ CREATE TABLE `navios` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
-CREATE TABLE `pacotes` (
-  `id_pacotes` int(11) NOT NULL AUTO_INCREMENT,
-  `descricao_pac` varchar(20) DEFAULT NULL,
+
+CREATE TABLE `produtos` (
+  `id_produto` int(11) NOT NULL AUTO_INCREMENT,
+  `descricao_prod` varchar(20) DEFAULT NULL,
   `valorpadrao` decimal(10,0) DEFAULT NULL,
   `status` varchar(10) DEFAULT NULL,
-  PRIMARY KEY (`id_pacotes`)
+  PRIMARY KEY (`id_produto`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -47,6 +51,7 @@ CREATE TABLE `usuarios` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
 
 CREATE TABLE `valorpadrao` (
   `valor` decimal(10,0) NOT NULL
